@@ -6,25 +6,43 @@ Xft.rgba: rgb
 !-- URXVT Settings --!
 URxvt.scrollBar: false
 
-*.foreground:   #b9cac8
-*.background:   #0f1111
-*.cursorColor:  #b9cac8
-*.color0:       #64d122
-*.color1:       #bb8537
-*.color2:       #64d122
-*.color3:       #474e4d
-*.color4:       #626b6a
-*.color5:       #838f8d
-*.color6:       #a9b8b6
-*.color7:       #d4e6e4
-*.color8:       #64d122
-*.color9:      #8e5abc
-*.color10:      #5dbdb4
-*.color11:      #f29bab
-*.color12:       #5a9cd0
-*.color13:      #9ac5f1
-*.color14:      #f2859b
-*.color15:      #9ac2ea
+! special
+*.foreground:   #a6a28c
+*.background:   #20201d
+*.cursorColor:  #a6a28c
+
+! black
+*.color0:       #20201d
+*.color8:       #7d7a68
+
+! red
+*.color1:       #d73737
+*.color9:       #d73737
+
+! green
+*.color2:       #60ac39
+*.color10:      #60ac39
+
+! yellow
+*.color3:       #cfb017
+*.color11:      #cfb017
+
+! blue
+*.color4:       #6684e1
+*.color12:      #6684e1
+
+! magenta
+*.color5:       #b854d4
+*.color13:      #b854d4
+
+! cyan
+*.color6:       #1fad83
+*.color14:      #1fad83
+
+! white
+*.color7:       #a6a28c
+*.color15:      #fefbec
+
 
 !-- Font --!
 URxvt.font: xft:Anonymous Pro:size=10
