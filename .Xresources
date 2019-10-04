@@ -6,96 +6,26 @@ Xft.rgba: rgb
 !-- URXVT Settings --!
 URxvt.scrollBar: false
 
-
-! https://terminal.sexy
-
-! Sexy October
-*.foreground:   #b9efc8
-*.background:   #000000
-*.cursorColor:  #b9efc8
-*.color0:       #000000
-*.color8:       #d058bc
-*.color1:       #0a120c
-*.color9:       #a89d42
-*.color2:       #19261d
-*.color10:      #aca25f
-*.color3:       #2c4132
-*.color11:      #ea76d5
-*.color4:       #45624e
-*.color12:      #6082e0
-*.color5:       #648b6f
-*.color13:      #df6c5a
-*.color6:       #87bb96
-*.color14:      #9c924f
-*.color7:       #b9efc8
-*.color15:      #ee88db
-
-! Sexy Green
-! *.foreground:   #d6e7d3
-! *.background:   #000000
-! *.cursorColor:  #d6e7d3
-! *.color0:       #000000
-! *.color8:       #2992d5
-! *.color1:       #0f110e
-! *.color9:       #4ba125
-! *.color2:       #202420
-! *.color10:      #ed55fd
-! *.color3:       #383d37
-! *.color11:      #109990
-! *.color4:       #565e54
-! *.color12:      #ed5b7c
-! *.color5:       #7a8578
-! *.color13:      #ae8c36
-! *.color6:       #a4b3a1
-! *.color14:      #5a9e45
-! *.color7:       #d6e7d3
-! *.color15:      #61b046
-
-
-! Sexy Blue (4th)
-! *.foreground:   #bedaad
-! *.background:   #090c07
-! *.cursorColor:  #bedaad
-! *.color0:       #10150e
-! *.color8:       #c264e2
-! *.color1:       #191e16
-! *.color9:       #63b7a8
-! *.color2:       #293024
-! *.color10:      #5c9f93
-! *.color3:       #3e4938
-! *.color11:      #d4497c
-! *.color4:       #5a6851
-! *.color12:      #6194b5
-! *.color5:       #7b8e6f
-! *.color13:      #b18742
-! *.color6:       #a2b993
-! *.color14:      #44a2d2
-! *.color7:       #ceebbb
-! *.color15:      #3e9a8b
-
-
-! Sexy Purple
-! *.foreground:   #decddb
-! *.background:   #10090f
-! *.cursorColor:  #decddb
-! *.color0:       #1a1018
-! *.color8:       #abbaee
-! *.color1:       #261823
-! *.color9:       #caba49
-! *.color2:       #3b2837
-! *.color10:      #53d981
-! *.color3:       #573d53
-! *.color11:      #f9bab4
-! *.color4:       #7c5976
-! *.color12:      #87a1ed
-! *.color5:       #a8799f
-! *.color13:      #7090e7
-! *.color6:       #c8a9c2
-! *.color14:      #ec79d9
-! *.color7:       #eadfe8
-! *.color15:      #40c872
-
+*.foreground:   #b9cac8
+*.background:   #0f1111
+*.cursorColor:  #b9cac8
+*.color0:       #64d122
+*.color1:       #bb8537
+*.color2:       #64d122
+*.color3:       #474e4d
+*.color4:       #626b6a
+*.color5:       #838f8d
+*.color6:       #a9b8b6
+*.color7:       #d4e6e4
+*.color8:       #64d122
+*.color9:      #8e5abc
+*.color10:      #5dbdb4
+*.color11:      #f29bab
+*.color12:       #5a9cd0
+*.color13:      #9ac5f1
+*.color14:      #f2859b
+*.color15:      #9ac2ea
 
 !-- Font --!
-*font: xft:Anonymous Pro:size=10
+URxvt.font: xft:Anonymous Pro:size=10
 
