@@ -10,6 +10,8 @@ set $right l
 set $term alacritty
 set $menu dmenu_path | fuzzel | xargs swaymsg exec --
 
+output DP-1 pos 0 0
+output DP-2 pos 3840 0
 output * bg $background fill
 
 exec swayidle -w \
