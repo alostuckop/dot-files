@@ -10,9 +10,9 @@ set $right l
 set $term alacritty
 set $menu dmenu_path | fuzzel | xargs swaymsg exec --
 
-output DP-1 pos 0 0
-output DP-2 pos 3840 0
-output DP-2 mode 2560x1440@120Hz
+output DP-2 pos 0 0
+output DP-3 pos 3840 0
+output DP-3 mode 2560x1440@120Hz
 output * bg $background fill
 
 exec swayidle -w \
@@ -138,3 +138,8 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# Unity Floating Windows
+for_window [title="UnityEditor.AddComponent.AddComponentWindow"] floating enable
+for_window [title="UnityEditor.AnnotationWindow"] floating enable
+for_window [title="UnityEditor.PopupWindow"] floating enable
