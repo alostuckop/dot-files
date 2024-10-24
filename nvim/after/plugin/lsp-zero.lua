@@ -25,6 +25,7 @@ require("mason-null-ls").setup({
 		"eslint_d",
 		"isort",
 		"prettier",
+		"pylint",
 		"stylua",
 		"ts-standard",
 	},
