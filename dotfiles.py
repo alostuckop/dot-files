@@ -26,6 +26,26 @@ def update_git(config_name):
     shutil.copytree(config_path, repo_config_path)
 
 
+def clean_nvim():
+
+    paths = [
+        "~/.config/nvim",
+        "~/.local/share/nvim",
+        "~/.local/state/nvim",
+        "~/.cache/nvim",
+    ]
+
+    for path in paths:
+        path = os.path.expanduser(path)
+
+        if os.path.exists(path):
+            shutil.rmtree(path)
+            print(f"Cleaning {path}")
+
+    config_nvim_path = os.path.expanduser("~/.config/nvim")
+    os.makedirs(config_nvim_path, exist_ok=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Manage dot files")
     parser.add_argument(
@@ -43,11 +63,20 @@ def main():
         action="store_true",
         help="Update the repository with the latest .config/<config>",
     )
+    parser.add_argument(
+        "-c",
+        "--clean-nvim",
+        action="store_true",
+        help="Remove nvim configuration directories",
+    )
 
     args = parser.parse_args()
 
     if args.apply:
+        if args.clean_nvim:
+            clean_nvim()
         apply_config(args.config)
+
     elif args.update_git:
         update_git(args.config)
 
