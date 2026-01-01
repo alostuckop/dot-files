@@ -19,7 +19,9 @@ return {
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				tex = { "latexindent" },
 			},
+			formatters = {},
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
