@@ -24,7 +24,7 @@ def apply_config(config_name):
 
 def _apply_zsh():
     shutil.copyfile(f"{repo_config_path}/.zshrc", f"{HOME_DIR_PATH}/.zshrc")
-    shutil.copyfile(f"{repo_config_path}/.zsh_profile", f"{HOME_DIR_PATH}/.zsh_profile")
+    shutil.copyfile(f"{repo_config_path}/.zprofile", f"{HOME_DIR_PATH}/.zprofile")
 
 
 def _apply_bash():
@@ -52,13 +52,16 @@ def update_git(config_name):
 
 
 def _update_zsh(repo_config_path):
-    shutil.copyfile(f"{HOME_DIR_PATH}/.zshrc", repo_config_path)
-    shutil.copyfile(f"{HOME_DIR_PATH}/.zsh_profile", repo_config_path)
+    shutil.copyfile(f"{HOME_DIR_PATH}/.zshrc", f"{repo_config_path}/.zshrc")
+    shutil.copyfile(f"{HOME_DIR_PATH}/.zprofile", f"{repo_config_path}/.zprofile")
 
 
 def _update_bash(repo_config_path):
-    shutil.copyfile(f"{HOME_DIR_PATH}/.bashrc", repo_config_path)
-    shutil.copyfile(f"{HOME_DIR_PATH}/.bash_profile", repo_config_path)
+    shutil.copyfile(f"{HOME_DIR_PATH}/.bashrc", f"{repo_config_path}/.bashrc")
+    shutil.copyfile(
+        f"{HOME_DIR_PATH}/.bash_profile",
+        f"{repo_config_path}/.bash_profile",
+    )
 
 
 def clean_nvim():
